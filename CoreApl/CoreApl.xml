@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreApl</name>
+    </assembly>
+    <members>
+        <member name="T:CoreApl.Controllers.LoginController">
+            <summary>
+            登录服务
+            </summary>
+        </member>
+        <member name="M:CoreApl.Controllers.LoginController.GetToken">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreApl.Controllers.LoginController.Get(System.Int32)">
+            <summary>
+            sssa
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreApl.Controllers.SystemController.Adsa">
+            <summary>
+            eew
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreApl.Controllers.UserController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
