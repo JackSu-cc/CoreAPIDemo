@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\Infrastruct\Infrastruct.csproj" />
     <ProjectReference Include="..\Service\Application.csproj" />
   </ItemGroup>

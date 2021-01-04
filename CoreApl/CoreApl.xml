@@ -17,7 +17,7 @@
         </member>
         <member name="M:CoreApl.Controllers.LoginController.Get(System.Int32)">
             <summary>
-            sssa
+            假的，根据id获取信息
             </summary>
             <param name="id"></param>
             <returns></returns>

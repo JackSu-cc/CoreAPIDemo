@@ -67,13 +67,15 @@ namespace CoreApl.Controllers
 
 
         /// <summary>
-        /// sssa
+        /// 假的，根据id获取信息
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public string Get(int id)
         {
+            int a =int.Parse("sdf");
             return "value";
         } 
     }

@@ -38,6 +38,7 @@ using Domain.EventHandler;
 using Common.Consul;
 using ClientDependency.Core;
 using IApplicationLifetime = Microsoft.AspNetCore.Hosting.IApplicationLifetime;
+using Common.Filter;
 
 namespace CoreApl
 {
@@ -52,9 +53,11 @@ namespace CoreApl
         // This method gets called by the runtime. Use this method to add services to the container. aaa
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        {
+        {  
             //添加controller服务(webapi)
-            services.AddControllers();//.SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+            services.AddControllers(c=> {
+                c.Filters.Add<CusExceptionFilterAttribute>();
+            });//.SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
             //添加数据库连接
             services.AddDbContext<CoreDemoDBContext>(o =>
             {
