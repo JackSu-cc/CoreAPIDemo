@@ -52,6 +52,12 @@ namespace Infrastruct.Repository.BaseRepository
             return _dbcontext.SaveChanges() > 0;
         }
 
+        //public bool CommitTransaction()
+        //{
+        //    this._dbcontext.Database.BeginTransaction();
+        //}
+
+
         //手动回收
         public void Dispose()
         {

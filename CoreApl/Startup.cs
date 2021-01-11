@@ -38,7 +38,9 @@ using Domain.EventHandler;
 using Common.Consul;
 using ClientDependency.Core;
 using IApplicationLifetime = Microsoft.AspNetCore.Hosting.IApplicationLifetime;
-using Common.Filter;
+using CoreApl.Filter;
+using Domain.Cmds.Log;
+using Infrastruct.Repository.LogInfo;
 
 namespace CoreApl
 {
@@ -156,6 +158,7 @@ namespace CoreApl
             //services.AddTransient<>
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ILogRepository, LogRepository>();
             //×¢Èë²Ö´¢
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IEFRepository<>), typeof(EFRepository<>));
@@ -170,6 +173,7 @@ namespace CoreApl
 
             //Å×ËÍÃüÁî£º Mediatr  Request/Response
             services.AddScoped<IRequestHandler<AddUserCommand, Unit>, UserCmdHandler>();
+            services.AddScoped<IRequestHandler<AddErrorLogCommand, Unit>, LogCmdHandler>();
             //Å×ËÍÊÂ¼þ£º Notification 
             services.AddScoped<INotificationHandler<InitUserRoleEvent>, InitUserRoleEventHandler>();
         }

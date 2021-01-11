@@ -58,14 +58,14 @@ namespace Domain.CmdHandler
             };
             _userRepository.Add(userInfo);
 
-            if (Commit()) 
+            if (Commit())
             {
                 //执行成功后发送事件
 
             }
             else
             {
-                _mediator.Publish(new Notification("","发生异常！"));
+                _mediator.Publish(new Notification("", "发生异常！"));
             }
 
             return Task.FromResult(new Unit());

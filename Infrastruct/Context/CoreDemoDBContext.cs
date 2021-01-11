@@ -19,6 +19,7 @@
 
 
 using Domain.Models;
+using Domain.Models.LogInfo;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -51,7 +52,12 @@ namespace Infrastruct.Context
 
         #endregion
 
-
+        #region 日志表
+        /// <summary>
+        /// ErrorLog
+        /// </summary>
+        public DbSet<ErrorLog> ErrorLog { get; set; }
+        #endregion
 
 
         /// <summary>

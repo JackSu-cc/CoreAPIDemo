@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Service\Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApl", "CoreApl\CoreApl.csproj", "{3F5F7E53-6072-4A11-AE99-C0EB2DF73114}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCore", "CommonCore\CommonCore.csproj", "{F909894E-4C00-43EC-99F0-D01D19B74BC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3F5F7E53-6072-4A11-AE99-C0EB2DF73114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F5F7E53-6072-4A11-AE99-C0EB2DF73114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F5F7E53-6072-4A11-AE99-C0EB2DF73114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F909894E-4C00-43EC-99F0-D01D19B74BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F909894E-4C00-43EC-99F0-D01D19B74BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F909894E-4C00-43EC-99F0-D01D19B74BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F909894E-4C00-43EC-99F0-D01D19B74BC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
