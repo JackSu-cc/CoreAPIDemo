@@ -22,7 +22,7 @@ using Common.BaseInterfaces.IBaseRepository;
 using Common.Cmds;
 using Common.IService;
 using Common.Notice;
-using Domain.Cmds.Log;
+using Domain.Cmds; 
 using Domain.IRepository;
 using Domain.Models.LogInfo;
 using MediatR;

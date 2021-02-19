@@ -1,5 +1,5 @@
 ﻿using Common.IService;
-using Domain.Cmds.Log;
+using Domain.Cmds;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Collections.Generic;

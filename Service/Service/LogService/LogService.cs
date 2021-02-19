@@ -21,7 +21,6 @@
 using Application.IService.ILogService;
 using Application.ViewModel.Log;
 using Common.IService;
-using Domain.Cmds.Log;
 using Domain.IRepository;
 using System;
 using System.Collections.Generic;

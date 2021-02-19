@@ -39,7 +39,7 @@ using Common.Consul;
 using ClientDependency.Core;
 using IApplicationLifetime = Microsoft.AspNetCore.Hosting.IApplicationLifetime;
 using CoreApl.Filter;
-using Domain.Cmds.Log;
+using Domain.Cmds;
 using Infrastruct.Repository.LogInfo;
 
 namespace CoreApl
