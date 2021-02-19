@@ -64,7 +64,7 @@ namespace CoreApl
             services.AddDbContext<CoreDemoDBContext>(o =>
             {
                 o.UseSqlServer(Configuration.GetSection("ConnectionStrings:Default").Value);
-            });
+            });  
 
 
 
