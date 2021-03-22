@@ -41,6 +41,7 @@ using IApplicationLifetime = Microsoft.AspNetCore.Hosting.IApplicationLifetime;
 using CoreApl.Filter;
 using Domain.Cmds;
 using Infrastruct.Repository.LogInfo;
+using CoreApl.Extends;
 
 namespace CoreApl
 {
@@ -155,8 +156,10 @@ namespace CoreApl
             //×¢Èë»º´æ
             services.AddSingleton<IMemoryCache, MemoryCache>();
 
-            //services.AddTransient<>
-            services.AddScoped<IUserService, UserService>();
+
+            services.BatchInjection("Application","Service");
+
+            //services.AddTransient<> 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ILogRepository, LogRepository>();
             //×¢Èë²Ö´¢
@@ -177,6 +180,8 @@ namespace CoreApl
             //Å×ËÍÊÂ¼þ£º Notification 
             services.AddScoped<INotificationHandler<InitUserRoleEvent>, InitUserRoleEventHandler>();
         }
+ 
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -34,5 +34,10 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:CoreApl.Extends.NativeDIHelper">
+            <summary>
+            原生DI
+            </summary>
+        </member>
     </members>
 </doc>
